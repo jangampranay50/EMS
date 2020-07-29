@@ -5,6 +5,7 @@ import java.util.List;
 import com.cg.ems.bean.Employee;
 import com.cg.ems.dao.EmployeeDao;
 import com.cg.ems.dao.EmployeeDaoImpl;
+import com.cg.ems.dao.EmployeeDaoJpaImpl;
 import com.cg.ems.exception.EmployeeException;
 
 public class EmployeeServiceImpl implements EmployeeService
@@ -13,7 +14,7 @@ public class EmployeeServiceImpl implements EmployeeService
 
 	public EmployeeServiceImpl()
 	{
-		employeeDao = new EmployeeDaoImpl();
+		employeeDao = new EmployeeDaoJpaImpl();
 		
 	}
 	
